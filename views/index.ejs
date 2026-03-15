@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include("./partials/head.ejs") %>
+
+  <body class="home">
+    <div id="container">
+      <%- include("./partials/header.ejs") %>
+      <aside id="mainimg">
+        <div class="slide slide1">
+          <div>
+            <h1>加速から最適化</h1>
+            <p>
+              前進を止め、効率化する<br />
+              新しさより伝統、そこからの創造
+            </p>
+            <p class="btn-border-radius"><a href="#">もっと詳しくみる</a></p>
+          </div>
+        </div>
+        <div class="slide slide2">
+          <div>
+            <h1>革新ではなく改良</h1>
+            <p>
+              増やすのではなく、整理する<br />
+              今あるものを見つめる、そこからの発見
+            </p>
+            <p class="btn-border-radius"><a href="#">もっと詳しくみる</a></p>
+          </div>
+        </div>
+        <div class="slide slide3">
+          <div>
+            <h1>二軸ではなく三軸</h1>
+            <p>
+              対立からナムスリーへ<br />
+              二極化でなく多次元化、そこからの融和
+            </p>
+            <p class="btn-border-radius"><a href="#">もっと詳しくみる</a></p>
+          </div>
+        </div>
+      </aside>
+      <div id="contents">
+        <main>
+          <section class="bg1">
+            <h2 class="c">
+              <span class="fade-in-text">Information</span
+              ><span class="hosoku">ご案内</span>
+            </h2>
+            <div class="list-grid1">
+              <div class="list">
+                <figure><img src="/images/title.jpg" alt="" /></figure>
+                <div class="text">
+                  <h4>朗読アプリ</h4>
+                  <p>「読みティア」</p>
+                </div>
+                <p class="btn"><a href="/yomitia">詳しくみる</a></p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2>
+              <span class="fade-in-text">What's New</span
+              ><span class="hosoku">お知らせ</span>
+            </h2>
+            <dl class="new">
+              <dt>2026/04/01<span>その他</span></dt>
+              <dd>NUMTHREE 始動</dd>
+            </dl>
+          </section>
+        </main>
+      </div>
+      <%- include("./partials/footer.ejs") %>
+    </div>
+  </body>
+</html>

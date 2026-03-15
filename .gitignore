@@ -1,0 +1,18 @@
+/node_modules
+.env
+text/*
+package-lock.json
+/.git
+/logs
+paswwordmail.txt
+
+.vscode/*
+!.vscode/tasks.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+/public/images/*
+/public/text/*

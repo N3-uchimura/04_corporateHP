@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include("./partials/head.ejs") %>
+  <link rel="stylesheet" href="/css/button.css" />
+
+  <body>
+    <div id="container">
+      <%- include("./partials/header.ejs") %>
+      <div id="contents">
+        <main>
+          <section>
+            <h2>確認画面<span class="hosoku">Contact</span></h2>
+            <form name="form1" method="post" action="/confirmed">
+              <table class="ta1">
+                <tr>
+                  <th width="150">お名前</th>
+                  <td><%= customername %></td>
+                </tr>
+                <tr>
+                  <th width="150">メールアドレス</th>
+                  <td><%= customermail %></td>
+                </tr>
+                <tr>
+                  <th>お問い合わせ内容</th>
+                  <td><%= content %></td>
+                </tr>
+              </table>
+              <p class="c">
+                <button
+                  type="submit"
+                  class="button-g button-6 button-standard"
+                  onClick="document.form1.mode.value='reinput';document.form1.submit()"
+                >
+                  送信
+                </button>
+              </p>
+              <input
+                type="hidden"
+                name="customerid"
+                value="<%= customerid %>"
+              />
+            </form>
+          </section>
+        </main>
+      </div>
+      <%- include("./partials/footer.ejs") %>
+    </div>
+  </body>
+</html>

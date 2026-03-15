@@ -1,0 +1,31 @@
+{
+  "name": "corporate-form",
+  "productName": "corporateform",
+  "version": "0.1.0",
+  "description": "",
+  "main": "form.ts",
+  "scripts": {
+    "start": "ts-node form.ts"
+  },
+  "keywords": [],
+  "author": {
+    "name": "numthree-uchimura (https://github.com/N3-uchimura/)",
+    "email": "uchimura@numthree.net"
+  },
+  "dependencies": {
+    "@types/node": "^25.3.5",
+    "dotenv": "^17.3.1",
+    "ejs": "^5.0.1",
+    "express": "^5.2.1",
+    "express-xss-sanitizer": "^2.0.1",
+    "helmet": "^8.1.0",
+    "log4js": "^6.9.1",
+    "mysql2": "^3.19.0",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/express-xss-sanitizer": "^2.0.0"
+  },
+  "license": "MIT"
+}

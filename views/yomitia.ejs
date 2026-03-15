@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include("./partials/head.ejs") %>
+
+  <body>
+    <div id="container">
+      <%- include("./partials/header.ejs") %>
+      <div id="contents">
+        <main>
+          <section>
+            <h2>朗読アプリ「読みティア」</h2>
+            <p>作品数5000超！声で聞ける朗読アプリ</p>
+            <p>
+              青空文庫の5000冊を丸ごと収録<br />
+              いろいろなキャラクターの声で作品の朗読を楽しめます。
+            </p>
+            <div class="thumbnail-view-parts"></div>
+            <div class="thumbnail-parts">
+              <img src="/images/book.jpg" alt="" />
+              <img src="/images/author.jpg" alt="" />
+              <img src="/images/character.jpg" alt="" />
+              <img src="/images/bookdetail.jpg" alt="" />
+              <img src="/images/authordetail.jpg" alt="" />
+            </div>
+          </section>
+        </main>
+      </div>
+      <%- include("./partials/footer.ejs") %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include("./partials/head.ejs") %>
+  <link rel="stylesheet" href="/css/button.css" />
+
+  <body>
+    <div id="container">
+      <%- include("./partials/header.ejs") %>
+      <div id="contents">
+        <main>
+          <section>
+            <h2>お問い合わせ<span class="hosoku">Contact</span></h2>
+            <form id="registForm" name="form1" method="post" action="/form">
+              <table class="ta1">
+                <tr>
+                  <th width="150">お名前<span style="color: red">※</span></th>
+                  <td>
+                    <input
+                      id="customername"
+                      name="customername"
+                      value=""
+                      type="text"
+                      size="40"
+                      maxlength="500"
+                      class="ws"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th width="150">
+                    メールアドレス<span style="color: red">※</span>
+                  </th>
+                  <td>
+                    <input
+                      id="customermail"
+                      name="customermail"
+                      value=""
+                      type="text"
+                      size="40"
+                      maxlength="500"
+                      class="ws"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th>お問い合わせ内容<span style="color: red">※</span></th>
+                  <td>
+                    <textarea
+                      id="content"
+                      name="content"
+                      cols="40"
+                      rows="10"
+                      class="wl"
+                    ></textarea>
+                  </td>
+                </tr>
+              </table>
+              <p class="c">
+                <button type="submit" class="button-g button-6 button-standard">
+                  送信
+                </button>
+                <button type="reset" class="button-g button-standard">
+                  リセット
+                </button>
+              </p>
+            </form>
+          </section>
+        </main>
+      </div>
+      <%- include("./partials/footer.ejs") %>
+      <script src="/js/validation.js"></script>
+    </div>
+  </body>
+</html>
