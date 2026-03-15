@@ -2,7 +2,7 @@
   "name": "corporate-form",
   "productName": "corporateform",
   "version": "0.1.0",
-  "description": "",
+  "description": "numthree corporate site",
   "main": "form.ts",
   "scripts": {
     "start": "ts-node form.ts"
@@ -13,7 +13,6 @@
     "email": "uchimura@numthree.net"
   },
   "dependencies": {
-    "@types/node": "^25.3.5",
     "dotenv": "^17.3.1",
     "ejs": "^5.0.1",
     "express": "^5.2.1",
@@ -24,6 +23,7 @@
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
+    "@types/node": "^25.3.5",
     "@types/express": "^5.0.6",
     "@types/express-xss-sanitizer": "^2.0.0"
   },
